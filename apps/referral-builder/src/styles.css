@@ -1,0 +1,373 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* referral style (container) */
+.referral {
+  background: #cccccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  width: 100%;
+}
+
+/* referral-form style */
+.referral-form {
+  background-color: #ffffff;
+  padding: 40px;
+  width: 50%;
+}
+.referral-form h1 {
+  color: #394f63;
+  font-size: 36px;
+  font-weight: bold;
+}
+.referral-form form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.referral-form form h4 {
+  border-bottom: 1px solid #c2c9cc;
+  color: #c2c9cc;
+  margin: 20px 0;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.form-input {
+  margin: 5px 0;
+  width: 50%;
+}
+.form-input label {
+  color: #394f63;
+  text-transform: uppercase;
+}
+.form-input input {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+.form-input:nth-of-type(odd) {
+  padding-right: 15px;
+}
+.form-input:nth-of-type(even) {
+  padding-left: 15px;
+}
+.referral-form .button-upload,
+.referral-form .button-create {
+  border-color: rgb(201, 195, 195);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 13px;
+  margin-top: 30px;
+  width: calc(50% - 15px);
+}
+.referral-form .button-upload {
+  background-color: #ffffff;
+  margin-right: 15px;
+  color: #554949;
+}
+.referral-form .button-create {
+  background-color: #1ead2a;
+  margin-left: 15px;
+  color: #ffffff;
+}
+.referral-form .button-upload:hover,
+.referral-form .button-create:hover {
+  -webkit-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000;
+}
+
+/* referral-preview */
+
+.referral-list {
+  margin: auto;
+}
+
+.referral-preview {
+  background-color: #DCDCDC;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px;
+  width: 50%;
+}
+
+.referral-preview-container {
+  -webkit-box-shadow: 0 3px 0 #aaaaaa;
+  box-shadow: 0 3px 0 #aaaaaa;
+  position: relative;
+  height: 80%;
+  background-color: #ffffff;
+}
+
+.referral-preview-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cccccc;
+}
+
+.referral-preview-table {
+  margin: 25px 25px 25px 25px;
+  width: 95% !important;
+}
+
+.referral-preview-userdata {
+  border-bottom: 1px solid #cccccc;
+}
+
+td, th {
+  border:none !important;
+  height: 34px;
+}
+
+.show-icon {
+  display: block;
+}
+.hide-icon {
+  display: none;
+}
+
+.referral-action {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("./assets/pencil.svg")
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* referral style (container) */
+  .referral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  /* referral-form style */
+  .referral-form {
+    width: 100%;
+  }
+
+  /* referral-preview */
+  .referral-preview {
+    width: 100%;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* referral style (container) */
+  .referral {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  /* referral-form style */
+  .referral-form {
+    width: 100%;
+  }
+
+  /* referral-preview */
+  .referral-preview {
+    width: 100%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  /* referral style (container) */
+  .referral {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  /* referral-form style */
+  .referral-form {
+    padding: 10px;
+    width: 100%;
+  }
+  .referral-form h1 {
+    font-size: 30px;
+  }
+  .referral-form form h4 {
+    margin: 10px 0;
+  }
+  .form-input:nth-of-type(odd) {
+    padding-right: 10px;
+  }
+  .form-input:nth-of-type(even) {
+    padding-left: 10px;
+  }
+  .referral-form form .button-upload,
+  .referral-form form .button-create {
+    font-size: 18px;
+    padding: 13px;
+    margin-top: 20px;
+    width: calc(50% - 10px);
+  }
+  .referral-form form .button-upload {
+    margin-right: 10px;
+  }
+  .referral-form form .button-create {
+    margin-left: 10px;
+  }
+
+  /* referral-preview */
+  .referral-preview {
+    padding: 10px;
+    width: 100%;
+  }
+  .referral-preview-title {
+    font-size: 18px;
+  }
+  .referral-preview-table {
+    font-size: 20px;
+    padding: 50px 0 25px 25px;
+  }
+  .referral-preview-userdata {
+    margin: 10px 0;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  /* referral style (container) */
+  .referral {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  /* referral-form style */
+  .referral-form {
+    padding: 10px;
+    width: 100%;
+  }
+  .referral-form form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .referral-form h1 {
+    font-size: 30px;
+  }
+  .referral-form form h4 {
+    margin: 10px 0;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-input:nth-of-type(odd) {
+    padding-right: 0px;
+  }
+  .form-input:nth-of-type(even) {
+    padding-left: 0px;
+  }
+  .referral-form form .button-upload,
+  .referral-form form .button-create {
+    font-size: 18px;
+    padding: 13px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .referral-form form .button-upload {
+    margin-right: 0px;
+  }
+  .referral-form form .button-create {
+    margin-left: 0px;
+  }
+
+  /* referral-preview */
+  .referral-preview {
+    padding: 10px;
+    width: 100%;
+  }
+  .referral-preview-title {
+    font-size: 18px;
+  }
+  .referral-preview-table {
+    font-size: 20px;
+    padding: 50px 0 25px 25px;
+  }
+  .referral-preview-userdata {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+}
